@@ -25,7 +25,7 @@ Metadata:
     SpdxLicenseId: Apache-2.0
 
 Parameters:
-  SumoEndpoint:
+  SumoEndpoint:https://endpoint4.collection.us2.sumologic.com/receiver/v1/http/ZaVnC4dhaV2hcwEtTLnNXH3svyWXO3U63LSpJe6vrT2o_ZFAeCsZ_UZ_sofGCPRobPFsY1EXrP-XBTZa3SyaTDUNGmeZc6pirCq-zWSv91u0JtY4hD7Xhg==
     Description: "SumoLogic Endpoint to post logs"
     Type: "String" 
 
@@ -47,7 +47,7 @@ Resources:
       ReservedConcurrentExecutions: 100
       Environment:
         Variables:
-          SUMO_ENDPOINT: !Ref SumoEndpoint
+          SUMO_ENDPOINT: https://endpoint4.collection.us2.sumologic.com/receiver/v1/http/ZaVnC4dhaV2hcwEtTLnNXH3svyWXO3U63LSpJe6vrT2o_ZFAeCsZ_UZ_sofGCPRobPFsY1EXrP-XBTZa3SyaTDUNGmeZc6pirCq-zWSv91u0JtY4hD7Xhg==
       Events:
         CloudWatchEventTrigger:
             Type: CloudWatchEvent
